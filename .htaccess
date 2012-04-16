@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !index.php
+RewriteCond %{REQUEST_FILENAME} !^core/
+
+RewriteRule ^(.+)\.php/(.+)$ index.php/$1.php/$2 [PT,L]
